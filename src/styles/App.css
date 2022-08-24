@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    /* border: 1px dashed red; */
+    max-width: 1440px;
+    min-width: 370px;
+    margin: auto;
+    padding: 0 102px;
+    margin-top: 96px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden ;
+    transition: 0.5s;
+
+
+}
+
+.Nav {
+    font-family: Helvetica;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userTitle {
+    font-size: 50px;
+}
+
+.createUserButton {
+    background-color: #555A88;
+    width: 227px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.fi-rr-plus {
+    width: 14px;
+}
+
+.CardsContainer {
+    /* border: 1px blue dashed; */
+    padding: 78px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 46px;
+
+}
+
+.card {
+    width: 381px;
+    
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.line {
+    border: 0.5px solid #E5E5E5;
+    margin: 12px 0;
+}
+
+.infoCard {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameLabel {
+    color: #D3D3D3;
+}
+
+.fi-rs-gift {
+    color: black;
+    height: 15px;
+}
+
+.footerCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerCard > label{
+    color: #BDBDBD;
+}
+
+.buttonsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    align-self: flex-end;
+}
+
+.btn {
+    width: 43px;
+    height: 43px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.delete {
+    background: #D85D5D;
+    border: none;
+}
+
+.fi-bs-trash, .fi-rr-pencil {
+    display: flex;
+    align-items: center;
+}
+
+.fi-rr-pencil{
+    color: #D3D3D3;
+}
+
+.edit{
+    border: 1px #BDBDBD solid;
+    background: #F6F6F6;
+
+}
+
+.inputLabel{
+    display: flex;
+    text-align: center;
+    gap: 5px;
+
+}
+
+@media (max-width: 810px) {
+    .createUserButton > span{
+        display: none;
+        transition: 1s;
+    }
+
+    .createUserButton{
+        width: 47px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 492px) {
+    .App {
+        max-width: 492px;
+        padding: 0 50px;
+        transition: 0.5s;
+}
+}
